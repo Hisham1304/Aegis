@@ -26,7 +26,6 @@ pipeline {
         ]) {
           sh '''
             set -euo pipefail
-            mkdir -p results
             echo "Pulling Aegis image..."
             docker pull playerunknown23/aegis:latest || true
             echo "Running Aegis scanner container..."
