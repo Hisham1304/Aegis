@@ -142,7 +142,6 @@ This snippet is a complete `step` that can be added to your bitbucket-pipelines.
           - |
             docker run --rm \
               -v "$BITBUCKET_CLONE_DIR":/app/target:ro \
-              -v "$BITBUCKET_CLONE_DIR/results":/app/results:rw \
               -e AEGIS_API_KEY="$AEGIS_API_KEY" \
               -e CONFIG_API_URL="$CONFIG_API_URL" \
               -e GITHUB_REPOSITORY="$BITBUCKET_REPO_FULL_NAME" \
